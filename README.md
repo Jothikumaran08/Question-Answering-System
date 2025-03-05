@@ -1,9 +1,24 @@
 Question Answering System
-This project implements an AI-powered Question Answering (QA) system that retrieves relevant information using BM25 and generates answers using the T5 Transformer model. The system is built with Python, Hugging Face Transformers, NLTK, and Gradio to provide an interactive web interface for users. It supports evaluation with BLEU & ROUGE scores and can be deployed on Hugging Face Spaces, Render, or Google Colab.
 
-🚀 Features:
-✔ Context retrieval using BM25
-✔ Answer generation with T5 Transformer
-✔ Gradio UI for easy interaction
-✔ Built-in performance evaluation
-✔ Deployable on multiple platforms
+This project implements a Question Answering (QA) system using a hybrid approach:
+
+BM25 Retrieval to fetch relevant contexts from a dataset.
+
+T5 Transformer Model to generate human-like answers.
+
+Gradio UI for an interactive web-based interface.
+
+🚀 Features
+
+Retrieves relevant passages using BM25
+
+Generates answers with T5 Transformer
+
+Simple Gradio Web Interface for users
+
+Uses SQuAD dataset for context and evaluation
+
+Supports BLEU & ROUGE metrics for performance evaluation
+
+Handles cases where no relevant context is found
+
